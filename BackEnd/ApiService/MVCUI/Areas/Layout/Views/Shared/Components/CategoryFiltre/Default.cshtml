@@ -1,0 +1,20 @@
+﻿@model List<ListCategoriesDto>
+
+@if (Model != null && Model.Count > 0)
+{
+    <div class="col-lg-3 mb-4">
+        <h5 class="fw-bold mb-3">Kategoriler</h5>
+        <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action ">Tüm Kategoriler </a>
+
+            @foreach (var item in Model)
+            {
+                <a href="#" class="list-group-item list-group-item-action ">@item.CategoryName</a>
+
+
+            }
+        </div>
+    </div>
+
+
+}   
