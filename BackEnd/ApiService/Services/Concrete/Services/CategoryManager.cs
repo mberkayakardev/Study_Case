@@ -30,7 +30,6 @@ namespace Services.Concrete.Services
                     var MappedData = _mapper.Map<List<ListCategoriesDto>>(result);
                     _cacheManager.Create<List<ListCategoriesDto>>(ConstVerables.AllActiveCategoryCacheKey, MappedData);
                     return new ApiDataResult<List<ListCategoriesDto>>(MappedData, ApiResultStatus.Ok);
-
                 }
                 return new ApiDataResult<List<ListCategoriesDto>>(null,ApiResultStatus.NotFound);
 

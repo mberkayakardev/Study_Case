@@ -11,6 +11,7 @@ namespace UI.Areas.Layout.Controllers
     {
         private readonly HttpClient _httpClient;
         private readonly AppConfigReadModel _Config;
+        private readonly IToastNotification
         public HomeController(IHttpClientFactory httpClient, IOptions<AppConfigReadModel> config)
         {
 

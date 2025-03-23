@@ -16,16 +16,14 @@ namespace Services.Concrete.Services
 
         public async Task<IApiDataResult<List<ListProductDto>>> GetAllProductsWithLandingPage(int? CategoryIdList)
         {
-            var repository = await _unitOfWork.GetGenericRepositories<Products>().GetAllAsync(x=> x.IsActive == true && (CategoryIdList.HasValue ? x.CategoryId == CategoryIdList : true));
+            var repository = await _unitOfWork.GetGenericRepositories<Products>().GetAllAsync(x => x.IsActive == true && (CategoryIdList.HasValue ? x.CategoryId == CategoryIdList : true));
             if (repository != null && repository.Count > 0)
             {
-                var MappedProduct  = _mapper.Map<List<ListProductDto>>(repository);
+                var MappedProduct = _mapper.Map<List<ListProductDto>>(repository);
                 return new ApiDataResult<List<ListProductDto>>(MappedProduct, Core.Utilities.Results.MVC.ComplexTypes.ApiResultStatus.Ok);
             }
-            else
-            {
-                return new ApiDataResult<List<ListProductDto>>(null, Core.Utilities.Results.MVC.ComplexTypes.ApiResultStatus.NotFound);
-            }
+
+            return new ApiDataResult<List<ListProductDto>>(null, Core.Utilities.Results.MVC.ComplexTypes.ApiResultStatus.NotFound);
 
         }
     }
