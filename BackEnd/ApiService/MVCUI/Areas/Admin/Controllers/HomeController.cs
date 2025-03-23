@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 using MVCUI.Models;
 using System.Net.Http;
@@ -6,6 +7,7 @@ using System.Net.Http;
 namespace UI.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles ="Admin")]
     public class HomeController : Controller
     {
         private readonly HttpClient _httpClient;
@@ -19,8 +21,6 @@ namespace UI.Areas.Admin.Controllers
 
         public async Task <IActionResult> Index()
         {
-            var response = await _httpClient.GetAsync($"{_Config.BaseUrl}/products");
-
             return View();
         }
     }

@@ -28,7 +28,7 @@ namespace Services.Concrete.Services
 
             var AppUserRepository = _unitOfWork.GetGenericRepositories<AppUser>();
 
-            var AppUser = await AppUserRepository.GetAsync(x => x.UserEmail == loginDto.Email && x.IsActive == true);
+            var AppUser = await AppUserRepository.GetAsync(x => x.UserName == loginDto.Email && x.IsActive == true, IncludeProperties:new System.Linq.Expressions.Expression<Func<AppUser, object>>[] {x=> x.AppUserRoles});
             if (AppUser == null)
                 return new ApiDataResult<TokenDto>(null, Core.Utilities.Results.MVC.ComplexTypes.ApiResultStatus.BadRequest, message.Messages.User.GirisBilgileriHatali);
 
@@ -45,12 +45,13 @@ namespace Services.Concrete.Services
                 return new ApiDataResult<TokenDto>(null, Core.Utilities.Results.MVC.ComplexTypes.ApiResultStatus.BadRequest, message.Messages.User.KullaniciKilitli);
             }
 
-            var token = _tokenService.CreateToken(AppUser);
+            var User = await _unitOfWork.AppUserRepositories.GetAppUserInformationAllById(AppUser.Id);
+            var token = _tokenService.CreateToken(User);
 
             var userRefreshToken = await _unitOfWork.GetGenericRepositories<AppToken>().GetAsync(x => x.AppUserId == AppUser.Id);
             if (userRefreshToken == null)
             {
-                await _unitOfWork.GetGenericRepositories<AppToken>().CreateAsync(new AppToken { Id = 1, IsActive = true, CreatedUserId = AppUser.Id, ModifiedUserId = AppUser.Id, IsUsed = false, CreatedUserName = AppUser.UserName, ModifiedUserName = AppUser.UserName, AppUserId = AppUser.Id, RefreshToken = token.RefreshToken, ExpireDate = token.RefreshTokenExpiration });
+                await _unitOfWork.GetGenericRepositories<AppToken>().CreateAsync(new AppToken { IsActive = true, CreatedUserId = AppUser.Id, ModifiedUserId = AppUser.Id, IsUsed = false, CreatedUserName = AppUser.UserName, ModifiedUserName = AppUser.UserName, AppUserId = AppUser.Id, RefreshToken = token.RefreshToken, ExpireDate = token.RefreshTokenExpiration });
             }
             else
             {

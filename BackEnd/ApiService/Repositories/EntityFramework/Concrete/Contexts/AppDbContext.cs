@@ -55,9 +55,10 @@ namespace QuizApp.Repositories.EntityFramework.Concrete.Contexts
         public override async Task<int> SaveChangesAsync(bool acceptAllChangesOnSuccess, CancellationToken cancellationToken = default)
         {
             ApplyAuditingRules();
-            return await base.SaveChangesAsync(cancellationToken);
+            return await base.SaveChangesAsync(acceptAllChangesOnSuccess,cancellationToken);
 
         }
+
 
 
         private void ApplyAuditingRules()

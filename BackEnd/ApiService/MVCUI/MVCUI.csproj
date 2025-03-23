@@ -577,6 +577,7 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="9.0.3" />
+    <PackageReference Include="NToastNotify" Version="8.0.0" />
   </ItemGroup>
 
   <ItemGroup>
@@ -646,10 +647,8 @@
 
   <ItemGroup>
     <Folder Include="Areas\Admin\Models\" />
-    <Folder Include="Areas\Layout\Models\" />
     <Folder Include="StaticFiles\" />
     <Folder Include="Views\Home\" />
-    <Folder Include="Views\Shared\" />
   </ItemGroup>
 
   <ItemGroup>

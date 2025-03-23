@@ -64,15 +64,31 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "WebApi.Controllers.CategoryController",
+    "ContainingType": "WebApi.Controllers.CategoriesController",
     "Method": "GetProductListForLanding",
-    "RelativePath": "api/Category",
+    "RelativePath": "api/Categories",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
     "ReturnTypes": [],
     "EndpointName": "categories"
+  },
+  {
+    "ContainingType": "WebApi.Controllers.CategoriesController",
+    "Method": "GetProductsByCategoryId",
+    "RelativePath": "api/Categories/{categoryId}/products",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "categoryId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   },
   {
     "ContainingType": "WebApi.Controllers.ProductsController",
@@ -90,22 +106,5 @@
     ],
     "ReturnTypes": [],
     "EndpointName": "products"
-  },
-  {
-    "ContainingType": "WebApi.Controllers.ProductsController",
-    "Method": "GetProductWithCategoryListForLanding",
-    "RelativePath": "api/Products",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "CategoryIdList",
-        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": [],
-    "EndpointName": "categories/{CategoryIdList}"
   }
 ]

@@ -1,4 +1,5 @@
 ﻿@model List<ListCategoriesDto>
+ 
 
 @if (Model != null && Model.Count > 0)
 {
@@ -10,11 +11,10 @@
             @foreach (var item in Model)
             {
                 <a href="#" class="list-group-item list-group-item-action ">@item.CategoryName</a>
-
-
             }
         </div>
     </div>
 
 
-}   
+}
+

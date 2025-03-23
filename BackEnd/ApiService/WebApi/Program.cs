@@ -1,4 +1,4 @@
-using ApiService.Services.Concrete.DependencyResolves.Microsoft;
+﻿using ApiService.Services.Concrete.DependencyResolves.Microsoft;
 using Core.Dtos.Concrete;
 using Core.Utilities.Options.Api;
 using Core.Utilities.Services;
@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.Extensions.Configuration;
 using Services.Abstract;
 using Services.Concrete.Services;
+using System.Diagnostics;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -61,6 +62,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 
+    var url = "https://localhost:7132/swagger/index.html"; // Gerekirse portu değiştir
+    Task.Run(() => OpenBrowser(url));
 }
 
 app.UseHttpsRedirection();
@@ -70,3 +73,21 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+
+
+static void OpenBrowser(string url)
+{
+    try
+    {
+        var psi = new ProcessStartInfo
+        {
+            FileName = url,
+            UseShellExecute = true
+        };
+        Process.Start(psi);
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine("Tarayıcı açılamadı: " + ex.Message);
+    }
+}

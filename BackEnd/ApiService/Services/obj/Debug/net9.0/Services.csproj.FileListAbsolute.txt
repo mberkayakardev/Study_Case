@@ -40,3 +40,4 @@ D:\Github\Study_Case\BackEnd\ApiService\Services\obj\Debug\net9.0\Services.dll
 D:\Github\Study_Case\BackEnd\ApiService\Services\obj\Debug\net9.0\refint\Services.dll
 D:\Github\Study_Case\BackEnd\ApiService\Services\obj\Debug\net9.0\Services.pdb
 D:\Github\Study_Case\BackEnd\ApiService\Services\obj\Debug\net9.0\ref\Services.dll
+D:\Github\Study_Case\BackEnd\ApiService\Services\obj\Debug\net9.0\Services.sourcelink.json

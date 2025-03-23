@@ -28,3 +28,4 @@ D:\Github\Study_Case\BackEnd\ApiService\Entities\obj\Debug\net9.0\Entities.dll
 D:\Github\Study_Case\BackEnd\ApiService\Entities\obj\Debug\net9.0\refint\Entities.dll
 D:\Github\Study_Case\BackEnd\ApiService\Entities\obj\Debug\net9.0\Entities.pdb
 D:\Github\Study_Case\BackEnd\ApiService\Entities\obj\Debug\net9.0\ref\Entities.dll
+D:\Github\Study_Case\BackEnd\ApiService\Entities\obj\Debug\net9.0\Entities.sourcelink.json

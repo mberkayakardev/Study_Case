@@ -109,12 +109,35 @@
         }
       }
     },
-    "/api/Category": {
+    "/api/Categories": {
       "get": {
         "tags": [
-          "Category"
+          "Categories"
         ],
         "operationId": "categories",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Categories/{categoryId}/products": {
+      "get": {
+        "tags": [
+          "Categories"
+        ],
+        "parameters": [
+          {
+            "name": "categoryId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
         "responses": {
           "200": {
             "description": "OK"
@@ -127,7 +150,7 @@
         "tags": [
           "Products"
         ],
-        "operationId": "categories/{CategoryIdList}",
+        "operationId": "products",
         "parameters": [
           {
             "name": "CategoryIdList",

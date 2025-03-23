@@ -5,6 +5,6 @@ namespace QuizApp.Repositories.EntityFramework.Abstract
 {
     public interface IAppUserRepositories : IEfGenericRepositories<AppUser>
     {
-
+        Task<AppUser> GetAppUserInformationAllById(int id);
     }
 }

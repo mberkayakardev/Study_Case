@@ -362,3 +362,4 @@ D:\Github\Study_Case\BackEnd\ApiService\WebApi\obj\Debug\net9.0\ref\WebApi.dll
 D:\Github\Study_Case\BackEnd\ApiService\WebApi\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
 D:\Github\Study_Case\BackEnd\ApiService\WebApi\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 D:\Github\Study_Case\BackEnd\ApiService\WebApi\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Github\Study_Case\BackEnd\ApiService\WebApi\obj\Debug\net9.0\WebApi.sourcelink.json

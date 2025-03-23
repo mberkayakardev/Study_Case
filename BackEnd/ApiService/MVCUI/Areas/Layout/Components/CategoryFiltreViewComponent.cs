@@ -32,7 +32,7 @@ namespace MVCUI.Areas.Layout.Components
             }
 
 
-            var response = await _httpClient.GetAsync($"{_Config.BaseUrl}/Category");
+            var response = await _httpClient.GetAsync($"{_Config.BaseUrl}/Categories");
             if (response.IsSuccessStatusCode)
             {
                 var json = await response.Content.ReadAsStringAsync();

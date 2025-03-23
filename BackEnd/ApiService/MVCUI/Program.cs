@@ -1,17 +1,43 @@
 using Core.Utilities.Managers;
 using Microsoft.Extensions.FileProviders;
 using MVCUI.Models;
+using NToastNotify;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllersWithViews()
-                .AddRazorRuntimeCompilation();
+                .AddRazorRuntimeCompilation()
+                .AddNToastNotifyToastr(new ToastrOptions
+                {
+                    PositionClass = ToastPositions.TopRight,
+                    TimeOut = 3000,
+                    ProgressBar = true
+                });
+
 
 builder.Services.Configure<AppConfigReadModel>(builder.Configuration.GetSection("ApiSettings"));
 builder.Services.AddHttpClient();
 builder.Services.AddMemoryCache();
 builder.Services.AddScoped<MemoryCacheManager>();
 
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromMinutes(30); // Oturum süresi
+    options.Cookie.HttpOnly = true;
+    options.Cookie.IsEssential = true;
+});
+
+builder.Services.AddAuthentication("MyCookieAuth")
+    .AddCookie("MyCookieAuth", options =>
+    {
+        options.LoginPath = "/Layout/Account/Singin";
+        options.AccessDeniedPath = "/Layout/Account/AccessDenied";
+        options.Cookie.Name = "ECommerceCookie";
+        options.ExpireTimeSpan = TimeSpan.FromMinutes(30);
+    });
+
+
+builder.Services.AddAuthorization();
 
 var app = builder.Build();
 
@@ -24,6 +50,8 @@ else
     app.UseExceptionHandler("/exception");
     app.UseHsts();
 }
+app.UseNToastNotify();
+
 
 app.UseStatusCodePagesWithReExecute("/Error/{0}"); // Costume Exception Handler
 
@@ -38,6 +66,8 @@ app.UseStaticFiles(new StaticFileOptions
 });
 
 app.UseRouting();
+
+app.UseSession();
 
 
 app.UseAuthentication();

@@ -44,6 +44,9 @@ namespace Services.Concrete.Services
                 new Claim(JwtRegisteredClaimNames.Jti,Guid.NewGuid().ToString())
             };
 
+            
+
+
             foreach (var ClaimItem in userApp.AppUserClaims.Select(x=> x.AppClaim))
             {
                 userList.Add(new Claim(ClaimTypes.Role, ClaimItem.ClaimName));
@@ -56,7 +59,7 @@ namespace Services.Concrete.Services
 
             foreach(var ClaimItem3 in userApp.AppUserRoles.Select(x=> x.Role))
             {
-                userList.Add(new Claim("BaseRole", ClaimItem3.RoleName));
+                userList.Add(new Claim(ClaimTypes.Role, ClaimItem3.RoleName));
             }
 
 

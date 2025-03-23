@@ -21,10 +21,10 @@ namespace WebApi.Controllers
         }
 
 
-        [HttpGet(Name = "categories/{CategoryIdList}")]
-        public async Task<IActionResult> GetProductWithCategoryListForLanding([FromQuery]int? CategoryIdList)
-        {
-            return ActionResultInstance( await _productService.GetAllProductsWithLandingPage(CategoryIdList));
-        }
+        //[HttpGet(Name = "categories/{CategoryIdList}")]
+        //public async Task<IActionResult> GetProductWithCategoryListForLanding([FromQuery]int? CategoryIdList)
+        //{
+        //    return ActionResultInstance( await _productService.GetAllProductsWithLandingPage(CategoryIdList));
+        //}
     }
 }
