@@ -3,64 +3,24 @@
   "WorkspaceRootPath": "D:\\Github\\Study_Case\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{03BEC5EC-30BC-4D8C-9B98-B8774F0EC99A}|WebApi\\WebApi.csproj|d:\\github\\study_case\\webapi\\controllers\\basketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{03BEC5EC-30BC-4D8C-9B98-B8774F0EC99A}|WebApi\\WebApi.csproj|solutionrelative:webapi\\controllers\\basketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{501DE04F-CB9D-47FF-80EF-403C335AFFF2}|Services\\Services.csproj|d:\\github\\study_case\\services\\abstract\\ibasketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{501DE04F-CB9D-47FF-80EF-403C335AFFF2}|Services\\Services.csproj|solutionrelative:services\\abstract\\ibasketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{501DE04F-CB9D-47FF-80EF-403C335AFFF2}|Services\\Services.csproj|d:\\github\\study_case\\services\\concrete\\services\\basketmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{501DE04F-CB9D-47FF-80EF-403C335AFFF2}|Services\\Services.csproj|solutionrelative:services\\concrete\\services\\basketmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{501DE04F-CB9D-47FF-80EF-403C335AFFF2}|Services\\Services.csproj|d:\\github\\study_case\\services\\concrete\\dependencyresolves\\microsoft\\microsoftioccontainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{501DE04F-CB9D-47FF-80EF-403C335AFFF2}|Services\\Services.csproj|solutionrelative:services\\concrete\\dependencyresolves\\microsoft\\microsoftioccontainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{03BEC5EC-30BC-4D8C-9B98-B8774F0EC99A}|WebApi\\WebApi.csproj|d:\\github\\study_case\\webapi\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{03BEC5EC-30BC-4D8C-9B98-B8774F0EC99A}|WebApi\\WebApi.csproj|solutionrelative:webapi\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90217214-111A-4FDC-8170-9512A93571EA}|Repositories\\Repositories.csproj|d:\\github\\study_case\\repositories\\entityframework\\concrete\\contexts\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90217214-111A-4FDC-8170-9512A93571EA}|Repositories\\Repositories.csproj|solutionrelative:repositories\\entityframework\\concrete\\contexts\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F786A7DB-9515-4A6F-AC80-CAFFD4D2F661}|MVCUI\\MVCUI.csproj|d:\\github\\study_case\\mvcui\\areas\\layout\\controllers\\basketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F786A7DB-9515-4A6F-AC80-CAFFD4D2F661}|MVCUI\\MVCUI.csproj|solutionrelative:mvcui\\areas\\layout\\controllers\\basketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0664A574-2B62-4D7D-84B9-FD2052A89450}|Entities\\Entities.csproj|d:\\github\\study_case\\entities\\concrete\\basket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0664A574-2B62-4D7D-84B9-FD2052A89450}|Entities\\Entities.csproj|solutionrelative:entities\\concrete\\basket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{03BEC5EC-30BC-4D8C-9B98-B8774F0EC99A}|WebApi\\WebApi.csproj|d:\\github\\study_case\\webapi\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03BEC5EC-30BC-4D8C-9B98-B8774F0EC99A}|WebApi\\WebApi.csproj|solutionrelative:webapi\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{04E340D4-3515-41F3-B9F5-B224DE05792D}|Dtos\\Dtos.csproj|d:\\github\\study_case\\dtos\\concrete\\baskets\\listbasketitems.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{04E340D4-3515-41F3-B9F5-B224DE05792D}|Dtos\\Dtos.csproj|solutionrelative:dtos\\concrete\\baskets\\listbasketitems.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D177D3B4-21E6-4830-97FA-1C634A783AF0}|Core\\Core.csproj|d:\\github\\study_case\\core\\utilities\\middlewares\\mvc\\tokenhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D177D3B4-21E6-4830-97FA-1C634A783AF0}|Core\\Core.csproj|solutionrelative:core\\utilities\\middlewares\\mvc\\tokenhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{501DE04F-CB9D-47FF-80EF-403C335AFFF2}|Services\\Services.csproj|d:\\github\\study_case\\services\\concrete\\messages\\messages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{501DE04F-CB9D-47FF-80EF-403C335AFFF2}|Services\\Services.csproj|solutionrelative:services\\concrete\\messages\\messages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F786A7DB-9515-4A6F-AC80-CAFFD4D2F661}|MVCUI\\MVCUI.csproj|d:\\github\\study_case\\mvcui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F786A7DB-9515-4A6F-AC80-CAFFD4D2F661}|MVCUI\\MVCUI.csproj|solutionrelative:mvcui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{04E340D4-3515-41F3-B9F5-B224DE05792D}|Dtos\\Dtos.csproj|d:\\github\\study_case\\dtos\\concrete\\baskets\\addbasketitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{04E340D4-3515-41F3-B9F5-B224DE05792D}|Dtos\\Dtos.csproj|solutionrelative:dtos\\concrete\\baskets\\addbasketitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F786A7DB-9515-4A6F-AC80-CAFFD4D2F661}|MVCUI\\MVCUI.csproj|d:\\github\\study_case\\mvcui\\areas\\admin\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F786A7DB-9515-4A6F-AC80-CAFFD4D2F661}|MVCUI\\MVCUI.csproj|solutionrelative:mvcui\\areas\\admin\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F786A7DB-9515-4A6F-AC80-CAFFD4D2F661}|MVCUI\\MVCUI.csproj|d:\\github\\study_case\\mvcui\\areas\\layout\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F786A7DB-9515-4A6F-AC80-CAFFD4D2F661}|MVCUI\\MVCUI.csproj|solutionrelative:mvcui\\areas\\layout\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F786A7DB-9515-4A6F-AC80-CAFFD4D2F661}|MVCUI\\MVCUI.csproj|d:\\github\\study_case\\mvcui\\areas\\layout\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F786A7DB-9515-4A6F-AC80-CAFFD4D2F661}|MVCUI\\MVCUI.csproj|solutionrelative:mvcui\\areas\\layout\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F786A7DB-9515-4A6F-AC80-CAFFD4D2F661}|MVCUI\\MVCUI.csproj|d:\\github\\study_case\\mvcui\\areas\\layout\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F786A7DB-9515-4A6F-AC80-CAFFD4D2F661}|MVCUI\\MVCUI.csproj|solutionrelative:mvcui\\areas\\layout\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{90217214-111A-4FDC-8170-9512A93571EA}|Repositories\\Repositories.csproj|d:\\github\\study_case\\repositories\\entityframework\\abstract\\ibasketrepositories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90217214-111A-4FDC-8170-9512A93571EA}|Repositories\\Repositories.csproj|solutionrelative:repositories\\entityframework\\abstract\\ibasketrepositories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -70,222 +30,71 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CategoriesController.cs",
-              "DocumentMoniker": "D:\\Github\\Study_Case\\WebApi\\Controllers\\CategoriesController.cs",
-              "RelativeDocumentMoniker": "WebApi\\Controllers\\CategoriesController.cs",
-              "ToolTip": "D:\\Github\\Study_Case\\WebApi\\Controllers\\CategoriesController.cs",
-              "RelativeToolTip": "WebApi\\Controllers\\CategoriesController.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAgwDQAAAAdAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "TokenHandler.cs",
+              "DocumentMoniker": "D:\\Github\\Study_Case\\Core\\Utilities\\Middlewares\\MVC\\TokenHandler.cs",
+              "RelativeDocumentMoniker": "Core\\Utilities\\Middlewares\\MVC\\TokenHandler.cs",
+              "ToolTip": "D:\\Github\\Study_Case\\Core\\Utilities\\Middlewares\\MVC\\TokenHandler.cs",
+              "RelativeToolTip": "Core\\Utilities\\Middlewares\\MVC\\TokenHandler.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAjwCEAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T21:08:15.985Z",
+              "WhenOpened": "2025-03-24T21:38:39.21Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "CategoriesController.cs",
-              "DocumentMoniker": "D:\\Github\\Study_Case\\MVCUI\\Areas\\Admin\\Controllers\\CategoriesController.cs",
-              "RelativeDocumentMoniker": "MVCUI\\Areas\\Admin\\Controllers\\CategoriesController.cs",
-              "ToolTip": "D:\\Github\\Study_Case\\MVCUI\\Areas\\Admin\\Controllers\\CategoriesController.cs",
-              "RelativeToolTip": "MVCUI\\Areas\\Admin\\Controllers\\CategoriesController.cs",
-              "ViewState": "AgIAADsAAAAAAAAAAAAowEsAAABKAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "D:\\Github\\Study_Case\\WebApi\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "WebApi\\Controllers\\ProductsController.cs",
+              "ToolTip": "D:\\Github\\Study_Case\\WebApi\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "WebApi\\Controllers\\ProductsController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABkAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T20:03:55.957Z",
+              "WhenOpened": "2025-03-24T21:37:47.438Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "D:\\Github\\Study_Case\\MVCUI\\Areas\\Layout\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "MVCUI\\Areas\\Layout\\Controllers\\HomeController.cs",
-              "ToolTip": "D:\\Github\\Study_Case\\MVCUI\\Areas\\Layout\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "MVCUI\\Areas\\Layout\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAQwAwAAAAwAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Github\\Study_Case\\MVCUI\\Program.cs",
+              "RelativeDocumentMoniker": "MVCUI\\Program.cs",
+              "ToolTip": "D:\\Github\\Study_Case\\MVCUI\\Program.cs",
+              "RelativeToolTip": "MVCUI\\Program.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACYAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T20:03:37.216Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "D:\\Github\\Study_Case\\MVCUI\\Areas\\Layout\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "MVCUI\\Areas\\Layout\\Controllers\\AccountController.cs",
-              "ToolTip": "D:\\Github\\Study_Case\\MVCUI\\Areas\\Layout\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "MVCUI\\Areas\\Layout\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAgwBMAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T20:03:26.825Z",
+              "WhenOpened": "2025-03-24T21:31:52.74Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "BasketController.cs",
-              "DocumentMoniker": "D:\\Github\\Study_Case\\WebApi\\Controllers\\BasketController.cs",
-              "RelativeDocumentMoniker": "WebApi\\Controllers\\BasketController.cs",
-              "ToolTip": "D:\\Github\\Study_Case\\WebApi\\Controllers\\BasketController.cs",
-              "RelativeToolTip": "WebApi\\Controllers\\BasketController.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAUwBwAAABWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T19:59:44.708Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "BasketManager.cs",
-              "DocumentMoniker": "D:\\Github\\Study_Case\\Services\\Concrete\\Services\\BasketManager.cs",
-              "RelativeDocumentMoniker": "Services\\Concrete\\Services\\BasketManager.cs",
-              "ToolTip": "D:\\Github\\Study_Case\\Services\\Concrete\\Services\\BasketManager.cs",
-              "RelativeToolTip": "Services\\Concrete\\Services\\BasketManager.cs",
-              "ViewState": "AgIAAFoAAAAAAAAAAAAAAGcAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T20:14:08.198Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "IBasketService.cs",
-              "DocumentMoniker": "D:\\Github\\Study_Case\\Services\\Abstract\\IBasketService.cs",
-              "RelativeDocumentMoniker": "Services\\Abstract\\IBasketService.cs",
-              "ToolTip": "D:\\Github\\Study_Case\\Services\\Abstract\\IBasketService.cs",
-              "RelativeToolTip": "Services\\Abstract\\IBasketService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T21:01:06.345Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MicrosoftIOCContainer.cs",
-              "DocumentMoniker": "D:\\Github\\Study_Case\\Services\\Concrete\\DependencyResolves\\Microsoft\\MicrosoftIOCContainer.cs",
-              "RelativeDocumentMoniker": "Services\\Concrete\\DependencyResolves\\Microsoft\\MicrosoftIOCContainer.cs",
-              "ToolTip": "D:\\Github\\Study_Case\\Services\\Concrete\\DependencyResolves\\Microsoft\\MicrosoftIOCContainer.cs",
-              "RelativeToolTip": "Services\\Concrete\\DependencyResolves\\Microsoft\\MicrosoftIOCContainer.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAMwC8AAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T21:09:22.124Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "BasketController.cs",
               "DocumentMoniker": "D:\\Github\\Study_Case\\MVCUI\\Areas\\Layout\\Controllers\\BasketController.cs",
               "RelativeDocumentMoniker": "MVCUI\\Areas\\Layout\\Controllers\\BasketController.cs",
               "ToolTip": "D:\\Github\\Study_Case\\MVCUI\\Areas\\Layout\\Controllers\\BasketController.cs",
               "RelativeToolTip": "MVCUI\\Areas\\Layout\\Controllers\\BasketController.cs",
-              "ViewState": "AgIAAGAAAAAAAAAAAAAUwCcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACMAAAAAAAAAAAAtwDsAAABSAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T20:56:52.441Z",
+              "WhenOpened": "2025-03-24T21:28:43.765Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ListBasketItems.cs",
-              "DocumentMoniker": "D:\\Github\\Study_Case\\Dtos\\Concrete\\Baskets\\ListBasketItems.cs",
-              "RelativeDocumentMoniker": "Dtos\\Concrete\\Baskets\\ListBasketItems.cs",
-              "ToolTip": "D:\\Github\\Study_Case\\Dtos\\Concrete\\Baskets\\ListBasketItems.cs",
-              "RelativeToolTip": "Dtos\\Concrete\\Baskets\\ListBasketItems.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAzAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "IBasketRepositories.cs",
+              "DocumentMoniker": "D:\\Github\\Study_Case\\Repositories\\EntityFramework\\Abstract\\IBasketRepositories.cs",
+              "RelativeDocumentMoniker": "Repositories\\EntityFramework\\Abstract\\IBasketRepositories.cs",
+              "ToolTip": "D:\\Github\\Study_Case\\Repositories\\EntityFramework\\Abstract\\IBasketRepositories.cs",
+              "RelativeToolTip": "Repositories\\EntityFramework\\Abstract\\IBasketRepositories.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T21:00:35.358Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "D:\\Github\\Study_Case\\Repositories\\EntityFramework\\Concrete\\Contexts\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "Repositories\\EntityFramework\\Concrete\\Contexts\\AppDbContext.cs",
-              "ToolTip": "D:\\Github\\Study_Case\\Repositories\\EntityFramework\\Concrete\\Contexts\\AppDbContext.cs",
-              "RelativeToolTip": "Repositories\\EntityFramework\\Concrete\\Contexts\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T21:07:06.744Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "AddBasketItemDto.cs",
-              "DocumentMoniker": "D:\\Github\\Study_Case\\Dtos\\Concrete\\Baskets\\AddBasketItemDto.cs",
-              "RelativeDocumentMoniker": "Dtos\\Concrete\\Baskets\\AddBasketItemDto.cs",
-              "ToolTip": "D:\\Github\\Study_Case\\Dtos\\Concrete\\Baskets\\AddBasketItemDto.cs",
-              "RelativeToolTip": "Dtos\\Concrete\\Baskets\\AddBasketItemDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAcAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T20:05:08.476Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "ProductsController.cs",
-              "DocumentMoniker": "D:\\Github\\Study_Case\\MVCUI\\Areas\\Layout\\Controllers\\ProductsController.cs",
-              "RelativeDocumentMoniker": "MVCUI\\Areas\\Layout\\Controllers\\ProductsController.cs",
-              "ToolTip": "D:\\Github\\Study_Case\\MVCUI\\Areas\\Layout\\Controllers\\ProductsController.cs",
-              "RelativeToolTip": "MVCUI\\Areas\\Layout\\Controllers\\ProductsController.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T20:03:20.79Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Messages.cs",
-              "DocumentMoniker": "D:\\Github\\Study_Case\\Services\\Concrete\\Messages\\Messages.cs",
-              "RelativeDocumentMoniker": "Services\\Concrete\\Messages\\Messages.cs",
-              "ToolTip": "D:\\Github\\Study_Case\\Services\\Concrete\\Messages\\Messages.cs",
-              "RelativeToolTip": "Services\\Concrete\\Messages\\Messages.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T20:32:24.618Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Orientation": 0,
-      "VerticalTabListWidth": 256,
-      "FloatingWindowState": {
-        "Id": "33046625-0a87-4361-8e9a-95131d543f35",
-        "Display": 2,
-        "X": 165,
-        "Y": 303,
-        "Width": 1327,
-        "Height": 734,
-        "WindowState": 2
-      },
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Basket.cs",
-              "DocumentMoniker": "D:\\Github\\Study_Case\\Entities\\Concrete\\Basket.cs",
-              "RelativeDocumentMoniker": "Entities\\Concrete\\Basket.cs",
-              "ToolTip": "D:\\Github\\Study_Case\\Entities\\Concrete\\Basket.cs",
-              "RelativeToolTip": "Entities\\Concrete\\Basket.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T20:26:43.597Z",
+              "WhenOpened": "2025-03-24T21:28:24.761Z",
               "EditorCaption": ""
             }
           ]

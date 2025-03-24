@@ -1,7 +1,28 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\Github\\Study_Case\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F786A7DB-9515-4A6F-AC80-CAFFD4D2F661}|MVCUI\\MVCUI.csproj|d:\\github\\study_case\\mvcui\\areas\\layout\\controllers\\basketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F786A7DB-9515-4A6F-AC80-CAFFD4D2F661}|MVCUI\\MVCUI.csproj|solutionrelative:mvcui\\areas\\layout\\controllers\\basketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03BEC5EC-30BC-4D8C-9B98-B8774F0EC99A}|WebApi\\WebApi.csproj|d:\\github\\study_case\\webapi\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03BEC5EC-30BC-4D8C-9B98-B8774F0EC99A}|WebApi\\WebApi.csproj|solutionrelative:webapi\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D177D3B4-21E6-4830-97FA-1C634A783AF0}|Core\\Core.csproj|d:\\github\\study_case\\core\\utilities\\middlewares\\mvc\\tokenhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D177D3B4-21E6-4830-97FA-1C634A783AF0}|Core\\Core.csproj|solutionrelative:core\\utilities\\middlewares\\mvc\\tokenhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F786A7DB-9515-4A6F-AC80-CAFFD4D2F661}|MVCUI\\MVCUI.csproj|d:\\github\\study_case\\mvcui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F786A7DB-9515-4A6F-AC80-CAFFD4D2F661}|MVCUI\\MVCUI.csproj|solutionrelative:mvcui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90217214-111A-4FDC-8170-9512A93571EA}|Repositories\\Repositories.csproj|d:\\github\\study_case\\repositories\\entityframework\\abstract\\ibasketrepositories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90217214-111A-4FDC-8170-9512A93571EA}|Repositories\\Repositories.csproj|solutionrelative:repositories\\entityframework\\abstract\\ibasketrepositories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,8 +30,74 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
-          "Children": []
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TokenHandler.cs",
+              "DocumentMoniker": "D:\\Github\\Study_Case\\Core\\Utilities\\Middlewares\\MVC\\TokenHandler.cs",
+              "RelativeDocumentMoniker": "Core\\Utilities\\Middlewares\\MVC\\TokenHandler.cs",
+              "ToolTip": "D:\\Github\\Study_Case\\Core\\Utilities\\Middlewares\\MVC\\TokenHandler.cs",
+              "RelativeToolTip": "Core\\Utilities\\Middlewares\\MVC\\TokenHandler.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAjwCEAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T21:38:39.21Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "D:\\Github\\Study_Case\\WebApi\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "WebApi\\Controllers\\ProductsController.cs",
+              "ToolTip": "D:\\Github\\Study_Case\\WebApi\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "WebApi\\Controllers\\ProductsController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABkAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T21:37:47.438Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Github\\Study_Case\\MVCUI\\Program.cs",
+              "RelativeDocumentMoniker": "MVCUI\\Program.cs",
+              "ToolTip": "D:\\Github\\Study_Case\\MVCUI\\Program.cs",
+              "RelativeToolTip": "MVCUI\\Program.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACYAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T21:31:52.74Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BasketController.cs",
+              "DocumentMoniker": "D:\\Github\\Study_Case\\MVCUI\\Areas\\Layout\\Controllers\\BasketController.cs",
+              "RelativeDocumentMoniker": "MVCUI\\Areas\\Layout\\Controllers\\BasketController.cs",
+              "ToolTip": "D:\\Github\\Study_Case\\MVCUI\\Areas\\Layout\\Controllers\\BasketController.cs",
+              "RelativeToolTip": "MVCUI\\Areas\\Layout\\Controllers\\BasketController.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAlwDsAAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T21:28:43.765Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IBasketRepositories.cs",
+              "DocumentMoniker": "D:\\Github\\Study_Case\\Repositories\\EntityFramework\\Abstract\\IBasketRepositories.cs",
+              "RelativeDocumentMoniker": "Repositories\\EntityFramework\\Abstract\\IBasketRepositories.cs",
+              "ToolTip": "D:\\Github\\Study_Case\\Repositories\\EntityFramework\\Abstract\\IBasketRepositories.cs",
+              "RelativeToolTip": "Repositories\\EntityFramework\\Abstract\\IBasketRepositories.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T21:28:24.761Z",
+              "EditorCaption": ""
+            }
+          ]
         }
       ]
     }

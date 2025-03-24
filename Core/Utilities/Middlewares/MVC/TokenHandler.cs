@@ -24,12 +24,7 @@ namespace Core.Utilities.Middlewares.MVC
             var accessToken = _httpContextAccessor.HttpContext.Session.GetString("access_token");
             var refreshToken = _httpContextAccessor.HttpContext.Session.GetString("refresh_token");
 
-            if (string.IsNullOrEmpty(accessToken) || string.IsNullOrEmpty(refreshToken))
-            {
-                var unauthorizedResponse = new HttpResponseMessage(System.Net.HttpStatusCode.Unauthorized);
-                return unauthorizedResponse;
-            }
-
+        
             if (!string.IsNullOrEmpty(accessToken))
             {
                 request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", accessToken);

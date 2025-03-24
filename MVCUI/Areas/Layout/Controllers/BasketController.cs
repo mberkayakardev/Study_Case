@@ -66,8 +66,9 @@ namespace MVCUI.Areas.Layout.Controllers
                 }
                 if (response.StatusCode == HttpStatusCode.Unauthorized)
                 {
-                    await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
-                    return RedirectToAction("Login", "Account");
+                    await HttpContext.SignOutAsync("MyCookieAuth");
+                    return RedirectToAction("Index", "Home");
+
                 }
 
                 var errorMessage = await response.Content.ReadAsStringAsync();
@@ -107,6 +108,10 @@ namespace MVCUI.Areas.Layout.Controllers
                 {
                     _toastNotification.AddErrorToastMessage("Aradığınız ürün bulunamadı");
                     return RedirectToAction("Index");
+                }
+                if (response.StatusCode == HttpStatusCode.Unauthorized)
+                {
+                    await HttpContext.SignOutAsync("MyCookieAuth");
                 }
 
                 _toastNotification.AddErrorToastMessage($"Bir Hata ile karşılaşıldı : Durum : {response.StatusCode} {response.RequestMessage}");
