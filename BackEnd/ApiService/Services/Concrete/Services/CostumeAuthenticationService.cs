@@ -95,7 +95,9 @@ namespace Services.Concrete.Services
             if (AppUser == null)
                 return new ApiDataResult<TokenDto>(null, Core.Utilities.Results.MVC.ComplexTypes.ApiResultStatus.BadRequest, message.Messages.User.GirisBilgileriHatali);
 
-            var tokenDto = _tokenService.CreateToken(AppUser);
+
+            var User = await _unitOfWork.AppUserRepositories.GetAppUserInformationAllById(AppUser.Id);
+            var tokenDto = _tokenService.CreateToken(User);
 
             userRefreshToken.RefreshToken = tokenDto.RefreshToken;
             userRefreshToken.ExpireDate = tokenDto.RefreshTokenExpiration;

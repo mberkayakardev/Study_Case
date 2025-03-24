@@ -8,6 +8,8 @@ namespace Dtos.Concrete.Categories
         public string CategoryName { get; set; }
         public string CategoryDescription { get; set; }
 
+        public bool IsActive { get; set; }
+
 
     }
 }

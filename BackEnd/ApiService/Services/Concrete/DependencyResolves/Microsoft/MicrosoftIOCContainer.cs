@@ -1,4 +1,6 @@
 ﻿using Core.Utilities.Managers;
+using FluentValidation;
+using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -52,12 +54,23 @@ namespace ApiService.Services.Concrete.DependencyResolves.Microsoft
         }
         private static void AddFluentValidation(IServiceCollection services, IConfiguration configuration)
         {
+            var assemblyList = Assembly.GetExecutingAssembly().GetTypes().Where(x => x.BaseType != null).Where(x => x.BaseType.Name.Contains("AbstractValidator")).ToList();
+            foreach (var item in assemblyList)
+            {
+                var DtoType = item.BaseType.GetGenericArguments()[0];
+                services.AddSingleton(typeof(IValidator<>).MakeGenericType(DtoType), item);
+            }
+
+
+
 
         }
 
         private static void AddConfiguration(IServiceCollection services, IConfiguration configuration)
         {
             services.AddScoped<MemoryCacheManager>();
+
+            services.AddHttpContextAccessor();
         }
 
         private static void AddUnitOfWork(IServiceCollection services, IConfiguration configuration)

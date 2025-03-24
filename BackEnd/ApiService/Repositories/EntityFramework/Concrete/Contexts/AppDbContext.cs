@@ -3,6 +3,7 @@ using Core.Entities.Abstract;
 using Core.Entities.Concrete.AppEntities;
 using Entities.Concrete;
 using Entities.Concrete.AppEntities;
+using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Diagnostics;
 using System.Reflection;
@@ -11,9 +12,10 @@ namespace QuizApp.Repositories.EntityFramework.Concrete.Contexts
 {
     public class AppDbContext : DbContext
     {
-        public AppDbContext(DbContextOptions<AppDbContext> opt) : base(opt) 
+        private readonly IHttpContextAccessor _httpContextAccessor;
+        public AppDbContext(DbContextOptions<AppDbContext> opt, IHttpContextAccessor httpContextAccessor) : base(opt)
         {
-            
+            _httpContextAccessor = httpContextAccessor;
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -63,19 +65,33 @@ namespace QuizApp.Repositories.EntityFramework.Concrete.Contexts
 
         private void ApplyAuditingRules()
         {
+            var user = _httpContextAccessor.HttpContext?.User;
+            var userIdClaim = user?.Claims.FirstOrDefault(x => x.Type == "sub" || x.Type == "UserId");
+            var userName = user?.Identity?.Name;
+
+
+
             foreach (var entry in ChangeTracker.Entries<BaseEntity>())
             {
                 if (entry.State == EntityState.Added)
                 {
-                    //entry.Entity.CreatedDate = DateTime.UtcNow;
-                    //entry.Entity.ModifiedDate = DateTime.UtcNow;
+                    entry.Entity.CreatedDate = DateTime.Now;
+                    entry.Entity.ModifiedDate = DateTime.Now;
+                    //entry.Entity.CreatedUserId = ( userIdClaim != 0 )  ? userIdClaim : null)
+                    entry.Entity.CreatedUserName = (!string.IsNullOrEmpty(userName) ? userName : string.Empty);
+                    entry.Entity.ModifiedUserName = (!string.IsNullOrEmpty(userName) ? userName : string.Empty);
+
 
                 }
                 if (entry.State == EntityState.Modified)
                 {
 
-                    //entry.Property("CreatedDate").IsModified = false;
-                    //entry.Entity.ModifiedDate = DateTime.UtcNow;
+                    entry.Property("CreatedDate").IsModified = false;
+                    entry.Property("CreatedUserName").IsModified = false;
+
+                    entry.Entity.ModifiedDate = DateTime.Now;
+                    entry.Entity.ModifiedUserName = (!string.IsNullOrEmpty(userName) ? userName : string.Empty);
+
                 }
             }
         }

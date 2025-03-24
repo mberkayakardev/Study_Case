@@ -9,6 +9,9 @@ namespace Services.Concrete.MappingProfiles
         public CategoriesMappingProfiles()
         {
             CreateMap<ListCategoriesDto, Categories>().ReverseMap();
+            CreateMap<CreateCategoriesDto, Categories>().ReverseMap();
+            CreateMap<UpdateCategoriesDto, Categories>().ReverseMap();
+
 
         }
     }

@@ -1,4 +1,5 @@
 using Core.Utilities.Managers;
+using Core.Utilities.Middlewares.MVC;
 using Microsoft.Extensions.FileProviders;
 using MVCUI.Models;
 using NToastNotify;
@@ -6,19 +7,22 @@ using NToastNotify;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllersWithViews()
-                .AddRazorRuntimeCompilation()
                 .AddNToastNotifyToastr(new ToastrOptions
                 {
                     PositionClass = ToastPositions.TopRight,
                     TimeOut = 3000,
                     ProgressBar = true
-                });
+                })
+                .AddRazorRuntimeCompilation();
 
 
 builder.Services.Configure<AppConfigReadModel>(builder.Configuration.GetSection("ApiSettings"));
 builder.Services.AddHttpClient();
 builder.Services.AddMemoryCache();
 builder.Services.AddScoped<MemoryCacheManager>();
+builder.Services.AddTransient<TokenHandler>();
+builder.Services.AddHttpContextAccessor();
+builder.Services.AddHttpClient("ApiClient").AddHttpMessageHandler<TokenHandler>();
 
 builder.Services.AddSession(options =>
 {
@@ -60,7 +64,7 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseStaticFiles(new StaticFileOptions
 {
-    RequestPath = "/npm",
+    RequestPath = "/node_modules",
     FileProvider = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory() + "/node_modules"))
 
 });

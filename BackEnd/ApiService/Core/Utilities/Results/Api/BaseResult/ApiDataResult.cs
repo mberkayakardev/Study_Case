@@ -18,6 +18,10 @@ namespace Core.Utilities.Results.MVC.BaseResult
         {
             Data = data;
         }
+        public ApiDataResult(T data, ApiResultStatus status, string Message, IEnumerable<ErrorModel> Errors) : base(status, Message, Errors)
+        {
+            Data = data;
+        }
         public T Data { get; }
     }
 }
