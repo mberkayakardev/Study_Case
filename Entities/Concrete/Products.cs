@@ -11,8 +11,10 @@ namespace Entities.Concrete
 
         public int Stock { get; set; }
         public int CategoryId { get; set; }
+
         #region Navigation Property
         public Categories Category { get; set; }
+        public BasketDetail BasketDetail { get; set; }
         #endregion
 
 

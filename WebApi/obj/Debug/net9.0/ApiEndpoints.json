@@ -64,6 +64,48 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "WebApi.Controllers.BasketController",
+    "Method": "AddBasketItem",
+    "RelativePath": "api/Basket",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Dtos.Concrete.Baskets.AddBasketItemDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApi.Controllers.BasketController",
+    "Method": "GetBasketItem",
+    "RelativePath": "api/Basket",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApi.Controllers.BasketController",
+    "Method": "GetBasketItem",
+    "RelativePath": "api/Basket/user/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "WebApi.Controllers.CategoriesController",
     "Method": "GetCategoriesListForLanding",
     "RelativePath": "api/Categories",

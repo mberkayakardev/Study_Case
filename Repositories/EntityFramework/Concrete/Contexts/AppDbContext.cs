@@ -39,8 +39,13 @@ namespace QuizApp.Repositories.EntityFramework.Concrete.Contexts
         public DbSet<Products> Products { get; set; }
         public DbSet<Categories> Categories { get; set; }
 
+
+        public DbSet<Basket> Baskets{ get; set; }
+        public DbSet<BasketDetail> BasketDetails{ get; set; }
+
+
         #endregion
-        
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());

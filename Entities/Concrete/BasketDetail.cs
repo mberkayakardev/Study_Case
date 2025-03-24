@@ -15,6 +15,7 @@ namespace Entities.Concrete
         
         #region Navigation Property
         public Basket Basket { get; set; }
+        public Products Products { get; set; }
         #endregion
 
     }

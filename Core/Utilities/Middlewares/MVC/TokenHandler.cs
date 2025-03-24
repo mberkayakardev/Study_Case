@@ -4,6 +4,7 @@ using System.Text.Json;
 using System.Text;
 using Core.Dtos.Concrete;
 using Microsoft.Extensions.Configuration;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Core.Utilities.Middlewares.MVC
 {
@@ -18,13 +19,22 @@ namespace Core.Utilities.Middlewares.MVC
         }
         protected override async Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
         {
+
+   
             var accessToken = _httpContextAccessor.HttpContext.Session.GetString("access_token");
             var refreshToken = _httpContextAccessor.HttpContext.Session.GetString("refresh_token");
+
+            if (string.IsNullOrEmpty(accessToken) || string.IsNullOrEmpty(refreshToken))
+            {
+                var unauthorizedResponse = new HttpResponseMessage(System.Net.HttpStatusCode.Unauthorized);
+                return unauthorizedResponse;
+            }
 
             if (!string.IsNullOrEmpty(accessToken))
             {
                 request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", accessToken);
             }
+   
 
             var response = await base.SendAsync(request, cancellationToken);
 

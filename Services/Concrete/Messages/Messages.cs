@@ -15,7 +15,10 @@
             public const string Created = "Kategori Oluşturuldu";
             public const string Updated = "Kategori Güncellendi";
         }
-
+        public static class BasketMessages
+        {
+            public const string AddedBasket = "Ürün Sepete Eklendi ";
+        }
 
 
 

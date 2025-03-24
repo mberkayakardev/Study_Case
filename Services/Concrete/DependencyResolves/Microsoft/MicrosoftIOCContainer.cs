@@ -45,6 +45,7 @@ namespace ApiService.Services.Concrete.DependencyResolves.Microsoft
         {
             services.AddScoped<IProductService, ProductManager>();
             services.AddScoped<ICategoryService, CategoryManager>();
+            services.AddScoped<IBasketService, BasketManager>();
 
         }
 
