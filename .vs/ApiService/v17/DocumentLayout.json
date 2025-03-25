@@ -40,7 +40,7 @@
               "RelativeDocumentMoniker": "MVCUI\\Areas\\Layout\\Views\\Shared\\Components\\CategoryFiltre\\Default.cshtml",
               "ToolTip": "D:\\Github\\Study_Case\\MVCUI\\Areas\\Layout\\Views\\Shared\\Components\\CategoryFiltre\\Default.cshtml",
               "RelativeToolTip": "MVCUI\\Areas\\Layout\\Views\\Shared\\Components\\CategoryFiltre\\Default.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABIAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAADwvwgAAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-03-25T20:08:59.863Z",
               "EditorCaption": ""
@@ -55,8 +55,7 @@
               "RelativeToolTip": "MVCUI\\Areas\\Layout\\Components\\CategoryFiltreViewComponent.cs",
               "ViewState": "AgIAAB4AAAAAAAAAAAAowC0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-25T20:08:47.482Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-25T20:08:47.482Z"
             },
             {
               "$type": "Document",
@@ -68,8 +67,7 @@
               "RelativeToolTip": "MVCUI\\Areas\\Layout\\Views\\Home\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-25T20:04:51.087Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-25T20:04:51.087Z"
             },
             {
               "$type": "Document",
@@ -81,8 +79,7 @@
               "RelativeToolTip": "MVCUI\\Areas\\Layout\\Controllers\\HomeController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-25T20:04:45.996Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-25T20:04:45.996Z"
             },
             {
               "$type": "Document",
@@ -94,8 +91,7 @@
               "RelativeToolTip": "MVCUI\\Areas\\Admin\\Controllers\\CategoriesController.cs",
               "ViewState": "AgIAAEEAAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-25T20:04:04.407Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-25T20:04:04.407Z"
             }
           ]
         }
