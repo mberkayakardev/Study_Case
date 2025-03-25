@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MVCUI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ec2e9ebb53b559fd38242db28dfce4e84cc43317")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+33803f3b544d6157b7749b434b6661174fc2af95")]
 [assembly: System.Reflection.AssemblyProductAttribute("MVCUI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MVCUI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
