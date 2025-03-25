@@ -38,6 +38,8 @@
 <img src ="https://raw.githubusercontent.com/mberkayakardev/Study_Case/refs/heads/master/Resimler/3.png" >
 <img src ="https://raw.githubusercontent.com/mberkayakardev/Study_Case/refs/heads/master/Resimler/4.png" >
 <img src ="https://raw.githubusercontent.com/mberkayakardev/Study_Case/refs/heads/master/Resimler/5.png" >
+<img src ="https://raw.githubusercontent.com/mberkayakardev/Study_Case/refs/heads/master/Resimler/6.png" >
+
  
 
 
