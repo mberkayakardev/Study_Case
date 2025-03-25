@@ -24,9 +24,18 @@ namespace UI.Areas.Layout.Controllers
         public async Task<IActionResult> Index(int CategoryId)
         {
             var response = new HttpResponseMessage();
-                
-            response = await _httpClient.GetAsync($"{_Config.BaseUrl}/products");
-          
+
+            if (CategoryId == 0)
+            {
+                response = await _httpClient.GetAsync($"{_Config.BaseUrl}/products");
+
+            }
+            else
+            {
+                response = await _httpClient.GetAsync($"{_Config.BaseUrl}/Categories/{CategoryId}/products");
+
+            }
+
             if (response.IsSuccessStatusCode)
             {
                 var json = await response.Content.ReadAsStringAsync();

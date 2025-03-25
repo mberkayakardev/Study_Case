@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Diagnostics;
 using System.Reflection;
+using System.Security.Claims;
 
 namespace QuizApp.Repositories.EntityFramework.Concrete.Contexts
 {
@@ -71,7 +72,7 @@ namespace QuizApp.Repositories.EntityFramework.Concrete.Contexts
         private void ApplyAuditingRules()
         {
             var user = _httpContextAccessor.HttpContext?.User;
-            var userIdClaim = user?.Claims.FirstOrDefault(x => x.Type == "sub" || x.Type == "UserId");
+            var userIdClaim = user?.Claims.FirstOrDefault(x => x.Type == ClaimTypes.NameIdentifier);
             var userName = user?.Identity?.Name;
 
 
@@ -82,7 +83,8 @@ namespace QuizApp.Repositories.EntityFramework.Concrete.Contexts
                 {
                     entry.Entity.CreatedDate = DateTime.Now;
                     entry.Entity.ModifiedDate = DateTime.Now;
-                    //entry.Entity.CreatedUserId = ( userIdClaim != 0 )  ? userIdClaim : null)
+                    entry.Entity.CreatedUserId = (userIdClaim != null ? Convert.ToInt32(userIdClaim.Value) : null);
+                    entry.Entity.ModifiedUserId = (userIdClaim != null ? Convert.ToInt32(userIdClaim.Value) : null);
                     entry.Entity.CreatedUserName = (!string.IsNullOrEmpty(userName) ? userName : string.Empty);
                     entry.Entity.ModifiedUserName = (!string.IsNullOrEmpty(userName) ? userName : string.Empty);
 
@@ -96,6 +98,8 @@ namespace QuizApp.Repositories.EntityFramework.Concrete.Contexts
 
                     entry.Entity.ModifiedDate = DateTime.Now;
                     entry.Entity.ModifiedUserName = (!string.IsNullOrEmpty(userName) ? userName : string.Empty);
+                    entry.Entity.ModifiedUserId = (userIdClaim != null ? Convert.ToInt32(userIdClaim.Value) : null);
+
 
                 }
             }
