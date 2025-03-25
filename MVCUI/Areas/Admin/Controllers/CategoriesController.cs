@@ -24,7 +24,6 @@ namespace MVCUI.Areas.Admin.Controllers
         public CategoriesController(IHttpClientFactory httpClient, IOptions<AppConfigReadModel> config, IToastNotification toastNotification)
         {
             _httpClient = httpClient.CreateClient("ApiClient");
-            //_httpClient = httpClient;
             _Config = config.Value;
             _toastNotification = toastNotification;
         }

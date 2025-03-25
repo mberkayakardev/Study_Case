@@ -22,7 +22,6 @@ namespace Repositories.EntityFramework.Concrete.Seeds
                      ProductName = "Iphone 14",
                      ProductDescription = "128 gb lık versiyon",
                      ProductPrice =20000,
-                     ProductCardImage = "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/apple/thumb/0003-mpuf3tu-a_large.jpg",
                      CategoryId = 1
                 },
                 new Products()
@@ -38,7 +37,6 @@ namespace Repositories.EntityFramework.Concrete.Seeds
                      ProductName = "Samsung S24 FE",
                      ProductDescription = "128 gb lık versiyon",
                      ProductPrice =15000,
-                     ProductCardImage = "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTNtyK9OXNPvPrrO8AO3JpPGtv9lOTvDRfKku6m3ZqtaO0KRwPUAYmJjgQYoRJLY5HfSoBx4dCkd9O57yAbVdNxGrxgUKmT",
                      CategoryId = 1
 
                 },
@@ -55,7 +53,6 @@ namespace Repositories.EntityFramework.Concrete.Seeds
                     ProductName = "Monster Laptop",
                     ProductDescription = "Yazilimci Bilgisayarı",
                     ProductPrice =40000,
-                    ProductCardImage = "https://m.media-amazon.com/images/I/61tOfogRfXL.__AC_SX300_SY300_QL70_ML2_.jpg",
                     CategoryId = 2
 
                 },
@@ -72,7 +69,6 @@ namespace Repositories.EntityFramework.Concrete.Seeds
                     ProductName = "ssd ",
                     ProductDescription = "500 Gb",
                     ProductPrice =1000,
-                    ProductCardImage = "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSXIJhS_a--H2uKCFDS5BEYT41Vhmf717hT06Z9ySrFl4R_7p6tWkfUwXvyb-zQJJz9JDlOgVE5lxZa0Hr0u3eN4_YOfJk9n6S1V9JAuKqJIFPhpaYTP42Vfw",
                     CategoryId = 3
 
                 },

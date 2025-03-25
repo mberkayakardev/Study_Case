@@ -5,6 +5,7 @@ using System.Text;
 using Core.Dtos.Concrete;
 using Microsoft.Extensions.Configuration;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authentication;
 
 namespace Core.Utilities.Middlewares.MVC
 {
@@ -19,12 +20,10 @@ namespace Core.Utilities.Middlewares.MVC
         }
         protected override async Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
         {
-
    
             var accessToken = _httpContextAccessor.HttpContext.Session.GetString("access_token");
             var refreshToken = _httpContextAccessor.HttpContext.Session.GetString("refresh_token");
 
-        
             if (!string.IsNullOrEmpty(accessToken))
             {
                 request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", accessToken);
@@ -47,12 +46,30 @@ namespace Core.Utilities.Middlewares.MVC
                     request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", newTokens.AccessToken);
                     request.Content?.Headers.ContentLength.Equals(request.Content?.ReadAsByteArrayAsync().Result.Length);
 
+
                     // İsteği tekrar gönder
                     response = await base.SendAsync(request, cancellationToken);
+                    if (response.StatusCode == System.Net.HttpStatusCode.Unauthorized)
+                    {
+                        await ForceLogout();
+                    }
+                }
+                else
+                {
+                    await ForceLogout();
                 }
              
             }
             return response;
+        }
+
+        private async Task ForceLogout()
+        {
+            var context = _httpContextAccessor.HttpContext;
+            context.Session.Remove("access_token");
+            context.Session.Remove("refresh_token");
+            context.Session.Clear();
+            await context.SignOutAsync("MyCookieAuth");
         }
 
         private async Task<TokenDto?> RefreshAccessToken(string refreshToken)

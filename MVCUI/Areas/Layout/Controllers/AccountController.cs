@@ -79,6 +79,16 @@ namespace MVCUI.Areas.Layout.Controllers
             return View(signinmodel);
         }
 
+        [HttpGet]
+        public async Task<IActionResult> SingOut()
+        {
+            HttpContext.Session.Remove("access_token");
+            HttpContext.Session.Remove("refresh_token");
+            await HttpContext.SignOutAsync("MyCookieAuth");
+
+            return RedirectToAction("Singin", "Account", new { area = "Layout" });
+
+        }
 
         [HttpGet]
         public IActionResult Dashboard()

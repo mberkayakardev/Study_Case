@@ -211,6 +211,40 @@
   },
   {
     "ContainingType": "WebApi.Controllers.ProductsController",
+    "Method": "CreateProduct",
+    "RelativePath": "api/Products",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Dtos.Concrete.Products.CreateProductsDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "products"
+  },
+  {
+    "ContainingType": "WebApi.Controllers.ProductsController",
+    "Method": "UpdateProduct",
+    "RelativePath": "api/Products",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Dtos.Concrete.Products.UpdateProductDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "products"
+  },
+  {
+    "ContainingType": "WebApi.Controllers.ProductsController",
     "Method": "GetCategoriesListForLanding",
     "RelativePath": "api/Products/{id}",
     "HttpMethod": "GET",
@@ -223,6 +257,16 @@
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApi.Controllers.ProductsController",
+    "Method": "GetAllCategories",
+    "RelativePath": "api/Products/all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   }
 ]

@@ -22,6 +22,7 @@ namespace WebApi.Controllers
         }
 
         [HttpGet]
+        [Authorize()]
         [HttpGet("user/{id}")]
 
         public async Task<IActionResult> GetBasketItem(int id)

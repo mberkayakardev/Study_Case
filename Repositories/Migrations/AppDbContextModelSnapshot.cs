@@ -84,13 +84,13 @@ namespace Repositories.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2025, 3, 24, 22, 51, 6, 836, DateTimeKind.Local).AddTicks(8760),
+                            CreatedDate = new DateTime(2025, 3, 25, 20, 9, 59, 591, DateTimeKind.Local).AddTicks(8340),
                             CreatedUserName = "Seed Data",
                             EmailConfirmed = true,
                             FalseEntryCount = 0,
                             IsActive = true,
                             IsBlocked = false,
-                            ModifiedDate = new DateTime(2025, 3, 24, 22, 51, 6, 836, DateTimeKind.Local).AddTicks(8763),
+                            ModifiedDate = new DateTime(2025, 3, 25, 20, 9, 59, 591, DateTimeKind.Local).AddTicks(8343),
                             ModifiedUserName = "Seed Data",
                             UserEmail = "berkayakar@gmail.com",
                             UserFullName = "Berkay AKAR",
@@ -100,13 +100,13 @@ namespace Repositories.Migrations
                         new
                         {
                             Id = 2,
-                            CreatedDate = new DateTime(2025, 3, 24, 22, 51, 6, 847, DateTimeKind.Local).AddTicks(3138),
+                            CreatedDate = new DateTime(2025, 3, 25, 20, 9, 59, 601, DateTimeKind.Local).AddTicks(7910),
                             CreatedUserName = "Seed Data",
                             EmailConfirmed = true,
                             FalseEntryCount = 0,
                             IsActive = true,
                             IsBlocked = false,
-                            ModifiedDate = new DateTime(2025, 3, 24, 22, 51, 6, 847, DateTimeKind.Local).AddTicks(3142),
+                            ModifiedDate = new DateTime(2025, 3, 25, 20, 9, 59, 601, DateTimeKind.Local).AddTicks(7913),
                             ModifiedUserName = "Seed Data",
                             UserEmail = "alturadmin@gmail.com",
                             UserFullName = "Altur Admin ",
@@ -241,20 +241,20 @@ namespace Repositories.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2025, 3, 24, 22, 51, 6, 834, DateTimeKind.Local).AddTicks(9731),
+                            CreatedDate = new DateTime(2025, 3, 25, 20, 9, 59, 589, DateTimeKind.Local).AddTicks(9646),
                             CreatedUserName = "Seed Data",
                             IsActive = true,
-                            ModifiedDate = new DateTime(2025, 3, 24, 22, 51, 6, 835, DateTimeKind.Local).AddTicks(7951),
+                            ModifiedDate = new DateTime(2025, 3, 25, 20, 9, 59, 590, DateTimeKind.Local).AddTicks(7905),
                             RoleDescription = "En yetkili kullanıcı",
                             RoleName = "Sistem Admin"
                         },
                         new
                         {
                             Id = 2,
-                            CreatedDate = new DateTime(2025, 3, 24, 22, 51, 6, 835, DateTimeKind.Local).AddTicks(8883),
+                            CreatedDate = new DateTime(2025, 3, 25, 20, 9, 59, 590, DateTimeKind.Local).AddTicks(8768),
                             CreatedUserName = "Seed Data",
                             IsActive = true,
-                            ModifiedDate = new DateTime(2025, 3, 24, 22, 51, 6, 835, DateTimeKind.Local).AddTicks(8885),
+                            ModifiedDate = new DateTime(2025, 3, 25, 20, 9, 59, 590, DateTimeKind.Local).AddTicks(8770),
                             RoleDescription = "Sadece sipariş verebilir. ",
                             RoleName = "Müşteri"
                         });
@@ -351,20 +351,20 @@ namespace Repositories.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2025, 3, 24, 22, 51, 6, 836, DateTimeKind.Local).AddTicks(4741),
+                            CreatedDate = new DateTime(2025, 3, 25, 20, 9, 59, 591, DateTimeKind.Local).AddTicks(4265),
                             CreatedUserName = "Seed Data",
                             IsActive = true,
-                            ModifiedDate = new DateTime(2025, 3, 24, 22, 51, 6, 836, DateTimeKind.Local).AddTicks(4744),
+                            ModifiedDate = new DateTime(2025, 3, 25, 20, 9, 59, 591, DateTimeKind.Local).AddTicks(4269),
                             RoleId = 2,
                             UserId = 1
                         },
                         new
                         {
                             Id = 2,
-                            CreatedDate = new DateTime(2025, 3, 24, 22, 51, 6, 836, DateTimeKind.Local).AddTicks(5044),
+                            CreatedDate = new DateTime(2025, 3, 25, 20, 9, 59, 591, DateTimeKind.Local).AddTicks(4558),
                             CreatedUserName = "Seed Data",
                             IsActive = true,
-                            ModifiedDate = new DateTime(2025, 3, 24, 22, 51, 6, 836, DateTimeKind.Local).AddTicks(5045),
+                            ModifiedDate = new DateTime(2025, 3, 25, 20, 9, 59, 591, DateTimeKind.Local).AddTicks(4559),
                             RoleId = 1,
                             UserId = 2
                         });
@@ -649,10 +649,10 @@ namespace Repositories.Migrations
                             Id = 1,
                             CategoryDescription = "Akıllı Telefon kategorisi ",
                             CategoryName = "Akıllı Telefon ",
-                            CreatedDate = new DateTime(2025, 3, 24, 22, 51, 6, 847, DateTimeKind.Local).AddTicks(6946),
+                            CreatedDate = new DateTime(2025, 3, 25, 20, 9, 59, 602, DateTimeKind.Local).AddTicks(2349),
                             CreatedUserName = "Seed Data",
                             IsActive = true,
-                            ModifiedDate = new DateTime(2025, 3, 24, 22, 51, 6, 847, DateTimeKind.Local).AddTicks(6949),
+                            ModifiedDate = new DateTime(2025, 3, 25, 20, 9, 59, 602, DateTimeKind.Local).AddTicks(2353),
                             ModifiedUserName = "Seed Data"
                         },
                         new
@@ -660,10 +660,10 @@ namespace Repositories.Migrations
                             Id = 2,
                             CategoryDescription = "Laptop ve Masaüstü Bilgisayarlar",
                             CategoryName = "Bilgisayar",
-                            CreatedDate = new DateTime(2025, 3, 24, 22, 51, 6, 847, DateTimeKind.Local).AddTicks(7268),
+                            CreatedDate = new DateTime(2025, 3, 25, 20, 9, 59, 602, DateTimeKind.Local).AddTicks(2763),
                             CreatedUserName = "Seed Data",
                             IsActive = true,
-                            ModifiedDate = new DateTime(2025, 3, 24, 22, 51, 6, 847, DateTimeKind.Local).AddTicks(7270),
+                            ModifiedDate = new DateTime(2025, 3, 25, 20, 9, 59, 602, DateTimeKind.Local).AddTicks(2764),
                             ModifiedUserName = "Seed Data"
                         },
                         new
@@ -671,10 +671,10 @@ namespace Repositories.Migrations
                             Id = 3,
                             CategoryDescription = "Harici bilgisayar parçaları ",
                             CategoryName = "Bilgisayar bileşenleri ",
-                            CreatedDate = new DateTime(2025, 3, 24, 22, 51, 6, 847, DateTimeKind.Local).AddTicks(7272),
+                            CreatedDate = new DateTime(2025, 3, 25, 20, 9, 59, 602, DateTimeKind.Local).AddTicks(2767),
                             CreatedUserName = "Seed Data",
                             IsActive = true,
-                            ModifiedDate = new DateTime(2025, 3, 24, 22, 51, 6, 847, DateTimeKind.Local).AddTicks(7272),
+                            ModifiedDate = new DateTime(2025, 3, 25, 20, 9, 59, 602, DateTimeKind.Local).AddTicks(2768),
                             ModifiedUserName = "Seed Data"
                         });
                 });
@@ -711,10 +711,6 @@ namespace Repositories.Migrations
                     b.Property<string>("ModifiedUserName")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("ProductCardImage")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("ProductDescription")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -740,12 +736,11 @@ namespace Repositories.Migrations
                         {
                             Id = 1,
                             CategoryId = 1,
-                            CreatedDate = new DateTime(2025, 3, 24, 22, 51, 6, 848, DateTimeKind.Local).AddTicks(853),
+                            CreatedDate = new DateTime(2025, 3, 25, 20, 9, 59, 602, DateTimeKind.Local).AddTicks(7019),
                             CreatedUserName = "Seed Data",
                             IsActive = true,
-                            ModifiedDate = new DateTime(2025, 3, 24, 22, 51, 6, 848, DateTimeKind.Local).AddTicks(856),
+                            ModifiedDate = new DateTime(2025, 3, 25, 20, 9, 59, 602, DateTimeKind.Local).AddTicks(7023),
                             ModifiedUserName = "Seed Data",
-                            ProductCardImage = "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/apple/thumb/0003-mpuf3tu-a_large.jpg",
                             ProductDescription = "128 gb lık versiyon",
                             ProductName = "Iphone 14",
                             ProductPrice = 20000m,
@@ -755,12 +750,11 @@ namespace Repositories.Migrations
                         {
                             Id = 2,
                             CategoryId = 1,
-                            CreatedDate = new DateTime(2025, 3, 24, 22, 51, 6, 848, DateTimeKind.Local).AddTicks(1682),
+                            CreatedDate = new DateTime(2025, 3, 25, 20, 9, 59, 602, DateTimeKind.Local).AddTicks(7847),
                             CreatedUserName = "Seed Data",
                             IsActive = true,
-                            ModifiedDate = new DateTime(2025, 3, 24, 22, 51, 6, 848, DateTimeKind.Local).AddTicks(1684),
+                            ModifiedDate = new DateTime(2025, 3, 25, 20, 9, 59, 602, DateTimeKind.Local).AddTicks(7849),
                             ModifiedUserName = "Seed Data",
-                            ProductCardImage = "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTNtyK9OXNPvPrrO8AO3JpPGtv9lOTvDRfKku6m3ZqtaO0KRwPUAYmJjgQYoRJLY5HfSoBx4dCkd9O57yAbVdNxGrxgUKmT",
                             ProductDescription = "128 gb lık versiyon",
                             ProductName = "Samsung S24 FE",
                             ProductPrice = 15000m,
@@ -770,12 +764,11 @@ namespace Repositories.Migrations
                         {
                             Id = 3,
                             CategoryId = 2,
-                            CreatedDate = new DateTime(2025, 3, 24, 22, 51, 6, 848, DateTimeKind.Local).AddTicks(1687),
+                            CreatedDate = new DateTime(2025, 3, 25, 20, 9, 59, 602, DateTimeKind.Local).AddTicks(7853),
                             CreatedUserName = "Seed Data",
                             IsActive = true,
-                            ModifiedDate = new DateTime(2025, 3, 24, 22, 51, 6, 848, DateTimeKind.Local).AddTicks(1687),
+                            ModifiedDate = new DateTime(2025, 3, 25, 20, 9, 59, 602, DateTimeKind.Local).AddTicks(7853),
                             ModifiedUserName = "Seed Data",
-                            ProductCardImage = "https://m.media-amazon.com/images/I/61tOfogRfXL.__AC_SX300_SY300_QL70_ML2_.jpg",
                             ProductDescription = "Yazilimci Bilgisayarı",
                             ProductName = "Monster Laptop",
                             ProductPrice = 40000m,
@@ -785,12 +778,11 @@ namespace Repositories.Migrations
                         {
                             Id = 4,
                             CategoryId = 3,
-                            CreatedDate = new DateTime(2025, 3, 24, 22, 51, 6, 848, DateTimeKind.Local).AddTicks(1689),
+                            CreatedDate = new DateTime(2025, 3, 25, 20, 9, 59, 602, DateTimeKind.Local).AddTicks(7856),
                             CreatedUserName = "Seed Data",
                             IsActive = true,
-                            ModifiedDate = new DateTime(2025, 3, 24, 22, 51, 6, 848, DateTimeKind.Local).AddTicks(1689),
+                            ModifiedDate = new DateTime(2025, 3, 25, 20, 9, 59, 602, DateTimeKind.Local).AddTicks(7856),
                             ModifiedUserName = "Seed Data",
-                            ProductCardImage = "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSXIJhS_a--H2uKCFDS5BEYT41Vhmf717hT06Z9ySrFl4R_7p6tWkfUwXvyb-zQJJz9JDlOgVE5lxZa0Hr0u3eN4_YOfJk9n6S1V9JAuKqJIFPhpaYTP42Vfw",
                             ProductDescription = "500 Gb",
                             ProductName = "ssd ",
                             ProductPrice = 1000m,
